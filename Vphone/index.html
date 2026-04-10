@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>V-Phone</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">V-Phone</div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav id="navLinks" class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="products.html">PRODUCTS</a>
+          <a href="promotion.html">PROMOTIONS</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="register.html">REGISTER</a>
+        </nav>
+
+        <div class="nav-icons">
+          <a href="#"
+            ><img src="images/search-icon.png" class="icon" alt="Search"
+          /></a>
+          <a href="#"
+            ><img src="images/user-icon.png" class="icon" alt="User"
+          /></a>
+          <a href="#"
+            ><img src="images/cart-icon.png" class="icon" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="yearly-sale" class="yearly-sale-section">
+        <div class="yearly-sale-container">
+          <div class="yearly-sale-text">
+            <h3 class="sale-subtitle">10% off</h3>
+            <h2 class="sale-title">New Year Sale</h2>
+            <a href="products.html" class="sale-btn">Shop Sale</a>
+          </div>
+          <div class="yearly-sale-image"></div>
+        </div>
+      </section>
+      <section id="company-services" class="company-services">
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-box">
+              <div class="service-icon">🚚</div>
+              <div class="service-content">
+                <h3>Free Delivery</h3>
+                <p>Enjoy fast and free delivery for all orders over $50.</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service-icon">✅</div>
+              <div class="service-content">
+                <h3>Quality Guarantee</h3>
+                <p>
+                  Every product is tested for top-notch performance and
+                  durability.
+                </p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service-icon">💰</div>
+              <div class="service-content">
+                <h3>Daily Offers</h3>
+                <p>Grab exclusive daily deals and limited-time discounts.</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service-icon">🔒</div>
+              <div class="service-content">
+                <h3>100% Secure Payment</h3>
+                <p>Your transactions are protected with top-level security.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mobile-products" class="product-store">
+        <div class="container">
+          <div class="section-header">
+            <h2>Recommendations</h2>
+          </div>
+
+          <div class="product-slider">
+            <div class="slider-wrapper" id="sliderWrapper">
+              <!-- CARDs -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/product-item1.jpg" alt="Iphone 10" />
+                  <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+                <h3>Iphone 10</h3>
+                <p class="price">$980</p>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/product-item2.jpg" alt="Iphone 11" />
+                  <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+                <h3>Iphone 11</h3>
+                <p class="price">$1100</p>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/product-item3.jpg" alt="Iphone 8" />
+                  <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+                <h3>Iphone 8</h3>
+                <p class="price">$780</p>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/product-item4.jpg" alt="Iphone 13" />
+                  <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+                <h3>Iphone 13</h3>
+                <p class="price">$1500</p>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/product-item5.jpg" alt="Iphone 12" />
+                  <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+                <h3>Iphone 12</h3>
+                <p class="price">$1300</p>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <button class="prev-btn">‹</button>
+              <button class="next-btn">›</button>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>V-Phone</h2>
+            <p>
+              Simple and pure, with modern touches. Comfort and connection in
+              every detail..
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon">🌐</a>
+              <a href="#" class="social-icon">📸</a>
+              <a href="#" class="social-icon">🐦</a>
+              <a href="#" class="social-icon">💼</a>
+              <a href="#" class="social-icon">▶️</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Help & Info</h4>
+            <ul>
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Returns Policies</a></li>
+              <li><a href="#">Shipping + Delivery</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Have any queries or suggestions?<br />
+              <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>
+            </p>
+            <p>
+              Need support? Call us:<br />
+              <a href="tel:+5511122233344">+55 111 222 333 44</a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <p class="footer-bottom">© 2025 V-Phone. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

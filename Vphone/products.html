@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>V-Phone</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">V-Phone</div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav id="navLinks" class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="products.html">PRODUCTS</a>
+          <a href="promotion.html">PROMOTIONS</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="register.html">REGISTER</a>
+        </nav>
+
+        <div class="nav-icons">
+          <a href="#"
+            ><img src="images/search-icon.png" class="icon" alt="Search"
+          /></a>
+          <a href="#"
+            ><img src="images/user-icon.png" class="icon" alt="User"
+          /></a>
+          <a href="#"
+            ><img src="images/cart-icon.png" class="icon" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="products-section">
+        <div class="container">
+          <div class="filter-container">
+            <h2>Filter By Category</h2>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-category="all">
+                All Phones
+              </button>
+              <button class="filter-btn" data-category="camera">Camera</button>
+              <button class="filter-btn" data-category="gaming">Gaming</button>
+              <button class="filter-btn" data-category="budget">Budget</button>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card" data-category="gaming">
+              <div class="product-badge">Gaming</div>
+              <div class="product-image">
+                <img src="images/rog9pro.jpg" alt="Asus ROG Phone 9 " />
+              </div>
+              <div class="product-info">
+                <h3>Asus ROG Phone 9</h3>
+                <p class="product-specs">
+                  <span>6.78" LTPO AMOLED 180Hz</span>
+                  <span>Snapdragon 8 Elite</span>
+                  <span>12GB RAM</span>
+                  <span>512GB Storage</span>
+                </p>
+                <p class="product-description">
+                  High-end gaming phone with top-tier performance and advanced
+                  cooling.
+                </p>
+                <div class="product-price">
+                  <span class="old-price">Rp 11.999.000</span>
+                  <span class="new-price">Rp 9.999.000</span>
+                </div>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="camera">
+              <div class="product-badge">Camera</div>
+              <div class="product-image">
+                <img src="images/16.jpg" alt="iPhone 16 Pro Max" />
+              </div>
+              <div class="product-info">
+                <h3>iPhone 16 Pro Max</h3>
+                <p class="product-specs">
+                  <span>6.9" Super Retina XDR OLED</span>
+                  <span>A18 Pro Chipset</span>
+                  <span>48MP Main</span>
+                  <span>12MP Front Camera</span>
+                </p>
+                <p class="product-description">
+                  Flagship camera phone with incredible detail and clarity.
+                </p>
+                <div class="product-price">
+                  <span class="old-price">Rp 24.999.000</span>
+                  <span class="new-price">Rp 22.499.000</span>
+                </div>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="camera">
+              <div class="product-badge">Camera</div>
+              <div class="product-image">
+                <img src="images/s25.webp" alt="Samsung S25 Ultra" />
+              </div>
+              <div class="product-info">
+                <h3>Samsung S25 Ultra</h3>
+                <p class="product-specs">
+                  <span>6.9" 120Hz AMOLED</span>
+                  <span>Snapdragon 8 Gen 3</span>
+                  <span>12GB RAM</span>
+                  <span>256GB Storage</span>
+                </p>
+                <p class="product-description">
+                  Daily driver with great screen and battery life.
+                </p>
+                <p class="product-price">Rp 22.999.000</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-card" data-category="camera">
+              <div class="product-badge">Camera</div>
+              <div class="product-image">
+                <img src="images/x11.jpg" alt="Vivo X100 Pro" />
+              </div>
+              <div class="product-info">
+                <h3>Vivo X100 Pro</h3>
+                <p class="product-specs">
+                  <span>6.78" LTPO AMOLED</span>
+                  <span>Snapdragon 8 Gen 2</span>
+                  <span>12GB RAM</span>
+                  <span>256GB Storage</span>
+                </p>
+                <p class="product-description">
+                  Exceptional camera with Zeiss optics and gimbal stabilization
+                  for perfect shots.
+                </p>
+                <p class="product-price">Rp 13.999.000</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-card" data-category="budget">
+              <div class="product-badge">Budget</div>
+              <div class="product-image">
+                <img src="images/gt.jpg" alt="Infinix GT 10 Pro" />
+              </div>
+              <div class="product-info">
+                <h3>Infinix GT 10 Pro</h3>
+                <p class="product-specs">
+                  <span>6.67" AMOLED</span>
+                  <span>Dimensity 8050</span>
+                  <span>8GB RAM</span>
+                  <span>256GB Storage</span>
+                </p>
+                <p class="product-description">
+                  Stylish design and strong performance for the price-conscious
+                  buyer.
+                </p>
+                <p class="product-price">Rp 3.199.000</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-card" data-category="gaming">
+              <div class="product-badge">Gaming</div>
+              <div class="product-image">
+                <img src="images/red.webp" alt="RedMagic 8S Pro" />
+              </div>
+              <div class="product-info">
+                <h3>RedMagic 8S Pro</h3>
+                <p class="product-specs">
+                  <span>6.8" AMOLED 120Hz</span>
+                  <span>Snapdragon 8 Gen 2</span>
+                  <span>12GB RAM</span>
+                  <span>256GB Storage</span>
+                </p>
+                <p class="product-description">
+                  Built for competitive gamers with shoulder triggers and active
+                  cooling.
+                </p>
+                <p class="product-price">Rp 10.999.000</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="no-results" style="display: none">
+            <h3>No products found in this category</h3>
+            <p>Please try another filter or view all products.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>V-Phone</h2>
+            <p>
+              Simple and pure, with modern touches. Comfort and connection in
+              every detail..
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon">🌐</a>
+              <a href="#" class="social-icon">📸</a>
+              <a href="#" class="social-icon">🐦</a>
+              <a href="#" class="social-icon">💼</a>
+              <a href="#" class="social-icon">▶️</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Help & Info</h4>
+            <ul>
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Returns Policies</a></li>
+              <li><a href="#">Shipping + Delivery</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Have any queries or suggestions?<br />
+              <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>
+            </p>
+            <p>
+              Need support? Call us:<br />
+              <a href="tel:+5511122233344">+55 111 222 333 44</a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <p class="footer-bottom">© 2025 V-Phone. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/fadein.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>

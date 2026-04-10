@@ -1,0 +1,257 @@
+/* Base Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==== SPECIAL PROGRAMS ==== */
+.special-programs {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.special-programs .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.program-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.program-link {
+  text-decoration: none;
+  color: #d01111;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.program-link:hover {
+  color: #a00b0b;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+  margin-top: 30px;
+}
+
+/* ==== SPECIAL PROMO ==== */
+.promo-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.promo-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d01111;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.promo-card:hover .promo-name {
+  color: #a00b0b;
+}
+
+/* Add fallback font-size and visibility */
+@media (max-width: 600px) {
+  .promo-name {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .promo-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* Optional Hover Visual FX */
+.promo-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.promo-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.promo-card {
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-info {
+  padding: 20px;
+}
+
+.promo-dates {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.promo-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #d01111;
+  margin-bottom: 10px;
+}
+
+.promo-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* ==== SUBSCRIBE SECTION ==== */
+.subscribe-section {
+  padding: 60px 0;
+  background-color: #1a1a1a;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #222;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.subscribe-text {
+  flex: 1 1 350px;
+  color: #f5f5f5;
+}
+
+.subscribe-text h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.subscribe-text p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.subscribe-form {
+  display: flex;
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 999px 0 0 999px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #e63946;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0 999px 999px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #c02736;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .subscribe-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe-input {
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+
+  .subscribe-button {
+    border-radius: 999px;
+    width: 100%;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+}
