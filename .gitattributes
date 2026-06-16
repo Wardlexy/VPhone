@@ -1,0 +1,7 @@
+# Keep GitHub's language badge focused on the source styling and behavior.
+# These HTML files are page templates for this static frontend project.
+Vphone/*.html linguist-detectable=false
+
+# Design/source notes should not affect repository language stats.
+Vphone/*.fig linguist-vendored
+Vphone/links.txt linguist-vendored
